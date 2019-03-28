@@ -1,0 +1,182 @@
+
+
+/*Main body layout */
+
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right top, #380b6b, #88006b, #c4005a, #ed303c, #fe7300);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slides {
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 65px;
+
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
+/*Text/Link layout*/
+h1 {
+  color: white;
+  margin-top: 0;
+  font-family: 'Bungee', cursive;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+h3 {
+  color: white;
+  margin-top: 5px;
+  top: 0;
+  left: 0;
+  display: block;
+  font-family: 'VT323', monospace;
+  margin-left: 60px;
+}
+
+nav a{
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-decoration: none;
+  background-color: black;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.biotxt{
+  text-align: center;
+  color: white;
+  margin: 35px;
+}
+
+p {
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ul {
+color: white;
+}
+
+
+
+/*--Menus --*/
+.menu-on {
+  color: white;
+  background-color: black;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  padding: 10px;
+  Position: fixed;
+}
+
+.menu-off {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.primary-nav {
+ position:fixed;
+ top: 0;
+ right: 0;
+ z-index: 1002;
+ display: none;
+}
+
+#toggle-menu {
+  display:none;
+}
+
+/*
+#toggle-menu:checked ~ .primary-nav {
+  display: block;
+}
+
+#toggle-menu:checked ~ .menu-off {
+  display: block;
+}
+*/
+
+
+
+/*Media Queries*/
+
+/*Burger Menu*/
+/*@media (min-width: 768px){
+      .menu-on, .menu-off {
+        display: none;
+      }
+      .primary-nav {
+        display: block;
+      }
+      nav a {
+        display: inline-block;
+      }
+
+}
+
+*/
+
+/*Bio*/
+@media (min-width: 768px){
+  .biotxt {
+    margin: 65px;
+  }
+  .slides {
+    margin top: 100px;
+    margin-left: 150px;
+  }
+
+  .menu-on {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+}
+
+/*carousel*/
+@media (min-width: 1080px){
+  .slides {
+    margin top: 100px;
+    margin-left: 280px;
+  }
+}
